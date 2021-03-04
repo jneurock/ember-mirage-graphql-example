@@ -1,0 +1,6 @@
+query Items {
+  items {
+    altName
+    name
+  }
+}

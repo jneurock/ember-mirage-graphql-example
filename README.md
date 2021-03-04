@@ -1,7 +1,9 @@
 # mirage-gql-resolver-test
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This is a very contrived example Ember app to demonstrate how different GraphQL
+resolvers can be used in tests by abstracting the code that creates the GraphQL
+request handler and overriding the route handler from the config on a per test
+basis.
 
 ## Prerequisites
 

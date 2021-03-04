@@ -1,0 +1,22 @@
+{{page-title "Index"}}
+
+{{#if this.model.error}}
+  <p class="error">
+    {{this.model.error}}
+  </p>
+{{else}}
+  {{#each this.model.items as |item|}}
+    <div class="item">
+      <p>
+        <span class="item__name">
+          {{item.name}}
+        </span>
+        {{#if item.altName}}
+          <span class="item__alt-name">
+            (aka {{item.altName}})
+          </span>
+        {{/if}}
+      </p>
+    </div>
+  {{/each}}
+{{/if}}
